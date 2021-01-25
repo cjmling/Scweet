@@ -37,7 +37,7 @@ def scrap(start_date, max_date, words=None, to_account=None, from_account=None, 
     if words:
         if type(words) is str : 
             words = words.split("//")
-            path = save_dir + "/" + words.split("//")[0] + '_' + str(init_date).split(' ')[0] + '_' + \
+            path = save_dir + "/" + words[0] + '_' + str(init_date).split(' ')[0] + '_' + \
                str(max_date).split(' ')[0] + '.csv'
         else :
             path = save_dir + "/" + words[0] + '_' + str(init_date).split(' ')[0] + '_' + \
